@@ -14,19 +14,19 @@ const Navbar = ({setCategory}) => {
         </li>
         
         <li className="nav-item">
-          <div className="nav-link" onClick={()=>setCategory("business")}>Bussiness</div>
+          <button className="nav-link" onClick={()=>setCategory("business")}>Bussiness</button>
         </li>
         
         <li className="nav-item">
-          <div className="nav-link" onClick={()=>setCategory("health")}>Health</div>
+          <button className="nav-link" onClick={()=>setCategory("health")}>Health</button>
         </li>
         
         <li className="nav-item">
-          <div className="nav-link" onClick={()=>setCategory("sports")}>Sports</div>
+          <button className="nav-link" onClick={()=>setCategory("sports")}>Sports</button>
         </li>
         
         <li className="nav-item">
-          <div className="nav-link" onClick={()=>setCategory("entertainment")}>Enterntainment</div>
+          <button className="nav-link" onClick={()=>setCategory("entertainment")}>Enterntainment</button>
         </li>
         
       </ul>

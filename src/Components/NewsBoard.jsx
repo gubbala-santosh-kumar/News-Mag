@@ -11,7 +11,7 @@ const NewsBoard = ({category}) => {
   return (
     <div>
       <br />
-        <h2 className='text-center'>Latest : <span className='badge bg-danger'>News</span></h2>
+        <h2 className='text-center'>Latest : <span className="badge bg-danger">{category.charAt(0).toUpperCase() + category.slice(1)} News</span></h2>
         {articles.map((news,index)=>{
             return <NewsItem key={index} title={news.title} description={news.description} src={news.urlToImage} url={news.url}/>;
         })}
